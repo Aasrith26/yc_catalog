@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 export default function Page(){
     return (
         <div>
-            <p className="text-white">Hello</p>
+            <p className="heading">Hello</p>
         </div>
     );
 }
