@@ -46,7 +46,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
       </div>
       <h3 className="mt-5 text-30-bold">Pitch Details</h3>
       {parsedData ? (
-        <article className="prose max-w-5xl font-work-sans break-all"
+        <article className="prose max-w-5xl font-work-sans break-words"
         dangerouslySetInnerHTML={{__html:parsedData}}/>
       ):(<p className="no-result">No details Provided</p>)}
       <hr className="divider" />

@@ -48,7 +48,7 @@ export default function StartupCard({post}:{post:StartupTypeCard}){
 
             </div>
             <Link href={`/startup/${_id}`}>
-                 <p className="startup-card_desc">{description}</p>
+                 <p className="startup-card_desc break-words">{description}</p>
                  <img src={image} alt="placeholder" className="startup-card_img" />
               </Link>
             <div className="flex-between gap-3 mt-5">
