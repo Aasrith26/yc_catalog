@@ -36,11 +36,11 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
                 <Link href={`/user/${post.author._id}`} className="flex gap-2 items-center mb-3">
                     <Image src={post.author.image || "/default-avatar.png"} alt="avatar" width={64} height={64} className="rounded-full drop-shadow-lg"/>
                     <div>
-                    <p className="text-20-medium">{post.author.name}</p>
-                    <p className="text-16-medium !text-black-300">@{post.author.username}</p>
+                    <p className="font-medium text-[20px] text-black dark:text-white">{post.author.name}</p>
+                    <p className="font-medium text-[16px] text-black dark:text-white">@{post.author.username}</p>
                     </div>
                 </Link>
-                <p className="category-tag bg-[#EAF7FE]">{post.category}</p>
+                <p className="category-tag text-gray-600 dark:text-gray bg-sky-200">{post.category}</p>
 
             </div>
       </div>

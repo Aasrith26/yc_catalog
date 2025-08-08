@@ -22,11 +22,14 @@ export default function StartupCard({post}:{post:StartupTypeCard}){
     const { _createdAt,views,author,title,category,_id,image,description}=post;
     return (
        
-        <li className="startup-card shadow-[2px_2px_0px_2px_rgb(0,0,0)] hover:border-[#a1f3ff] transition-all duration-500 hover:shadow-[2px_2px_0px_2px_rgb(125,203,237)] hover:bg-[#EAF7FE] group">
+        <li className="startup-card shadow-[2px_2px_0px_2px_rgb(0,0,0)] hover:border-[#a1f3ff] transition-all duration-500 hover:shadow-[2px_2px_0px_2px_rgb(125,203,237)] hover:bg-[#EAF7FE]
+         dark:shadow-[#87CEFA]
+         dark:hover:bg-gray-500
+         dark:hover:border-primary group">
             <div className="flex-between">
-                <p className="startup_card_date" suppressHydrationWarning>{formatDate(_createdAt)}</p>
+                <p className="text-black dark:text-gray-600" suppressHydrationWarning>{formatDate(_createdAt)}</p>
                 <div className="flex gap-1.5">
-                    <EyeIcon className="size-6 text-primary"/>
+                    <EyeIcon className="size-6 text-black"/>
                     <span className="text-16-medium">{views}</span>
                 </div>
             </div>

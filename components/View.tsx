@@ -28,7 +28,7 @@ export default async function View({id}:{id:string}){
           </div>
     
           <p className="view-text">
-            <span className="font-black">{totalViews} {marker}</span>
+            <span className="text-gray-800">{totalViews} {marker}</span>
           </p>
         </div>
       );

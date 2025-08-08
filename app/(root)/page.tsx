@@ -28,7 +28,7 @@ export default async function Page({searchParams}:
             </section>
 
             <section className="section-container">
-                <p className="my-6 mx-10 text-30-semibold">{
+                <p className="my-6 mx-10 text-30-semibold ">{
                     query?`Search Results for "${query}"`:"All Startups"
                 }</p>
             <ul className="card_grid">

@@ -89,6 +89,7 @@ export const StartupForm = () => {
   const [state, formAction, isPending] = useActionState(handleFormSubmit, initialState);
 
   return (
+    
     <form action={formAction} className="startup-form">
       <div>
         <label htmlFor="title" className="startup-form_label">
@@ -186,5 +187,6 @@ export const StartupForm = () => {
         <Send className="size-6 ml-2" />
       </Button>
     </form>
+    
   );
 };

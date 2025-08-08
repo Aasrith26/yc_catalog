@@ -17,7 +17,7 @@ export default async function Home({params}:{params: Promise<{ id: string }>}){
         <section className="profile_container">
             <div className="profile_card bg-[#87CEFA]">
                 <div className="profile_title">
-                    <h3 className="text-24-black uppercase text-center line-clamp-1">{user.name}</h3>
+                    <h3 className="text-[24px] font-black text-black dark:text-white uppercase text-center line-clamp-1">{user.name}</h3>
                 </div>
                 <Image src={user?.image || '/default-avatar.png'} alt={user.name}
                 width={220}
